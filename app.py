@@ -10,7 +10,7 @@ from groq import Groq, APIConnectionError, APIStatusError, AuthenticationError, 
 
 load_dotenv()
 
-MODEL = "llama-3.3-70b-versatile"
+MODEL = "openai/gpt-oss-120b"
 DATA_DIR = Path("data")
 PLANS_DIR = DATA_DIR / "plans"
 DATA_DIR.mkdir(exist_ok=True)
