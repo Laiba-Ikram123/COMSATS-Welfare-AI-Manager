@@ -132,7 +132,7 @@ Require a society member to review the plan before action.
                 client = Groq(api_key=api_key)
                 with st.spinner("Creating a draft plan..."):
                     response = client.chat.completions.create(
-                        model="llama-3.3-70b-versatile",
+                        model="openai/gpt-oss-120b",
                         messages=[
                             {"role": "system", "content": "You create actionable, cautious plans for student welfare activities."},
                             {"role": "user", "content": prompt},
